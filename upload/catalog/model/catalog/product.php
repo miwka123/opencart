@@ -24,7 +24,7 @@ class Product extends \Opencart\System\Engine\Model {
 	}
 
 	public function getProducts($data = []) {
-		$sql = "SELECT p.`product_id`";
+		$sql = "SELECT p.`product_id` ";
 
 		if (!empty($data['filter_category_id'])) {
 			if (!empty($data['filter_sub_category'])) {
